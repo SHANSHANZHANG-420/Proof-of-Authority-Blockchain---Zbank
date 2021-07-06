@@ -33,3 +33,29 @@ Saving the node 1 and node 2 Public address of the key and Path of the secret ke
 ### Creating a Genesis Block
 <img width="826" alt="Create a genesis block " src="https://user-images.githubusercontent.com/76719561/124562773-c3619880-de82-11eb-8501-37597355d861.png">
 
+
+
+### Initialize the nodes 
+Using geth, initialize each node with the new networkname.json.
+
+./geth --datadir node1 init zbank/zbank.json
+./geth --datadir node2 init zbank/zbank.json
+
+
+### Unlock the node 1 and node 2 - staring mining blocks
+Run the nodes in separate terminal windows with the commands:
+
+./geth --datadir node1 --unlock "SEALER_ONE_ADDRESS" --mine --rpc --allow-insecure-unlock
+./geth --datadir node2 --unlock "SEALER_TWO_ADDRESS" --mine --port 30304 --bootnodes "enode://SEALER_ONE_ENODE_ADDRESS@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+
+
+Unlock my  node 1 
+./geth --datadir node1 --unlock "519a7994b5C45b7b2850Bd1C81d714b44C26D479" --mine --rpc --allow-insecure-unlock
+<img width="766" alt="Node 1 mining" src="https://user-images.githubusercontent.com/76719561/124563900-d163e900-de83-11eb-9ae4-fac1a55fd885.png">
+
+
+Unlock my node 2 
+./geth --datadir node2 --unlock "5c361d4d6CD12D545a6e5B3C49CF6c077aDF5f91" --mine --port 30304 --bootnodes "enode://a034092680fce7b35044e658276443196cc6996f78f72308a897a67a6b718c21b13439a34aa0c7a61fa89eabdf90747f9dd12c77e27beb805f08702e504679ae@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+<img width="640" alt="Node 2 mining" src="https://user-images.githubusercontent.com/76719561/124563916-d5900680-de83-11eb-9290-d92526c195f0.png">
+
+
