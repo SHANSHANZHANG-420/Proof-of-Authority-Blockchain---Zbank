@@ -55,11 +55,13 @@ Run the nodes in separate terminal windows with the commands:
 
 Unlock my  node 1 
 ./geth --datadir node1 --unlock "519a7994b5C45b7b2850Bd1C81d714b44C26D479" --mine --rpc --allow-insecure-unlock
+
 <img width="766" alt="Node 1 mining" src="https://user-images.githubusercontent.com/76719561/124563900-d163e900-de83-11eb-9ae4-fac1a55fd885.png">
 
 
 Unlock my node 2 
 ./geth --datadir node2 --unlock "5c361d4d6CD12D545a6e5B3C49CF6c077aDF5f91" --mine --port 30304 --bootnodes "enode://a034092680fce7b35044e658276443196cc6996f78f72308a897a67a6b718c21b13439a34aa0c7a61fa89eabdf90747f9dd12c77e27beb805f08702e504679ae@127.0.0.1:30303" --ipcdisable --allow-insecure-unlock
+
 <img width="640" alt="Node 2 mining" src="https://user-images.githubusercontent.com/76719561/124563916-d5900680-de83-11eb-9290-d92526c195f0.png">
 
 
