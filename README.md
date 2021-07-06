@@ -67,6 +67,7 @@ Unlock my node 2
 
 ### Go to myCrypto App 
 Create custom network 
+
 <img width="578" alt="Custom network" src="https://user-images.githubusercontent.com/76719561/124564465-7252a400-de84-11eb-9b70-08a62980834f.png">
 
 
@@ -76,10 +77,13 @@ Select the View & Send option from the left menu pane, then click Keystore file 
 On the next screen, click Select Wallet File, then navigate to the keystore directory inside your Node1 directory, select the file located there, provide your password when prompted and then click Unlock.
 
 View your account balance 
+
 <img width="1201" alt="Account balance" src="https://user-images.githubusercontent.com/76719561/124564719-b04fc800-de84-11eb-8cde-dd1505c205fe.png">
 
 
 ### make Transaction 
+
 <img width="852" alt="Screen Shot 2021-07-06 at 5 19 59 pm" src="https://user-images.githubusercontent.com/76719561/124564859-d2e1e100-de84-11eb-9166-978c190d06a1.png">
+
 <img width="1036" alt="Transcation" src="https://user-images.githubusercontent.com/76719561/124564874-d6756800-de84-11eb-807c-999f72fb7330.png">
 
